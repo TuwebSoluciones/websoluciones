@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web-Soluciones</title>
+        <link rel="stylesheet" href="/css/estilos.css">
+    </head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-content">
+                <h1 class="title">Web-Soluciones</h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/index.html">INICIO</a></li>
+                        <li><a href="/views/productos.html">GALERÍA</a></li>
+                        <li><a href="/views/presupuesto.html">PRESUPUESTOS</a></li>
+                        <li><a href="/views/contacto.html">CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Para más información, por favor rellene el formulario o visítenos en nuestra ubicación.</p>
+
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <h2>Ubicación</h2>
+            <!-- Mapa de Google Maps incrustado -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.42751298352!2d-3.807653924776865!3d40.28846567146054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418b9ff28d92f9%3A0xd5fd1d33591a70ae!2sC.%20de%20B%C3%A9lgica%2C%2016%2C%2028943%20Fuenlabrada%2C%20Madrid!5e0!3m2!1ses!2ses!4v1714584080763!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/accounts/emailsignup/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es">
+            <img id="img_footer" src="/imagenes/instagram.jpg" alt="instagram"></a>
+        <a href="https://twitter.com/iniciarsesion"><img id="img_footer" src="/imagenes/twitter.jpg" alt="twitter"></a>
+        <a href="https://m.facebook.com/login/?locale=es_ES%2F"><img id="img_footer" src="/imagenes/lofb.png" alt="facebook"></a>
+        <a href="http://127.0.0.1:5500/views/contacto.html"><p id="parafo_footer">Contáctanos</p></a>
+        <a href="http://127.0.0.1:5500/views/presupuesto.html"><p id="parafo_footer">Tu presupuesto</p></a>
+        <a href="http://127.0.0.1:5500/views/productos.html"><p id="parafo_footer">Nuestros Servicios</p></a>
+        <a href="http://127.0.0.1:5500/index.html"><p id="parafo_footer">Inicio</p></a>
+    </footer>
+</body>
+</html>
